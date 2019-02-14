@@ -3,10 +3,20 @@
     .children( "span" ).lettering()
     .children( "span" ).lettering();
 
-$("#os-phrases2 > p")
-.css('opacity', 1).lettering( 'words' )
-.children( "span" ).lettering()
-.children( "span" ).lettering();
+    $("#os-phrases > h3")
+    .css('opacity', 1).lettering( 'words' )
+    .children( "span" ).lettering()
+    .children( "span" ).lettering();
+
+        $("#os-phrases > p")
+        .css('opacity', 1).lettering( 'words' )
+        .children( "span" ).lettering()
+        .children( "span" ).lettering();
+    
+    $("#os-phrases > video")
+    .css('opacity', 1).lettering( 'words' )
+    .children( "span" ).lettering()
+    .children( "span" ).lettering();
     
 /*Script reference "https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"*/
 /* Orignal Lettering.JS 0.6.1 by Dave Rupert  - http://daverupert.com */
