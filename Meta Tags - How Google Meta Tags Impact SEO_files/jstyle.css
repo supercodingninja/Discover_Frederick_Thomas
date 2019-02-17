@@ -1,0 +1,109 @@
+/* These are style changes we need made while we rebuild the theme */
+.jtable {
+  display: table;
+  width: 100%;
+}
+
+.jtable .jrow {
+  display: table-row;
+}
+
+.jtable .jrow .jcell {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.footer .jtable .jrow .jcell {
+  vertical-align: middle;
+}
+
+.jtable .jrow .jcell.half {
+  width: 50%;
+}
+
+.jtable .jrow .jcell.quarter {
+  width: 25%;
+}
+
+.jtable .jrow .jcell.logo {
+  width: 60%;
+}
+
+.jtable .jrow .jcell.facebook,
+.jtable .jrow .jcell.google {
+  width: 15%;
+}
+
+
+.jtable .jrow .jcell.right {
+  text-align: right;
+}
+
+.footer-badge-facebook {
+  margin-top: 0.45rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+.footer-badge-facebook img {
+  width: 175px;
+  min-width: 175px;
+  height: auto;
+}
+
+.footer-badge-google {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.footer-badge-logo img {
+  width: 100%;
+}
+
+img.footer_icon_social {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__connect .icon-text__size-large {
+  padding-left: 0;
+}
+
+.safe-secure__partner-container .facebook-marketing-icon {
+  padding-top: 4px;
+  margin-right: 0.75em;
+}
+
+
+
+@media screen and (max-width: 703px) {
+  .jtable .jrow .jcell,
+  .jtable .jrow .jcell.half  {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .jtable .jrow .jcell.right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-badge-facebook {
+    text-align: center;
+    margin: auto;
+  }
+  .footer-badge-google {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .safe-secure__content {
+    width: 100%;
+    max-width: 100%;
+  }
+  .facebook-marketing-icon {
+    display: inline-block;
+  }
+}

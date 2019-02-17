@@ -1,0 +1,13 @@
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.toolbar-horizontal .sticky,
+.toolbar-vertical .sticky {
+  top: 39px;
+}
+
+.toolbar-horizontal.toolbar-tray-open .sticky {
+  top: 87px;
+}
