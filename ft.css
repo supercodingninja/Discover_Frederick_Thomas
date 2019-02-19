@@ -3,8 +3,9 @@
 }
 
 html {
-	background: url("./imgs/Win\ The\ Race!.jpg") no-repeat center fixed; 
-	background-size: cover;
+	background: url("./imgs/FAM.jpg") no-repeat center fixed; 
+	background-size: 48%;
+	background-color: black;
 }
 
 #header {
