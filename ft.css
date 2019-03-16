@@ -8,20 +8,20 @@ html {
 }
 
 #header {
-    background:url(medium-density-image.png);
+    background:url(./imgs/mm.jpg);
 }
 
 @media screen and (-webkit-device-pixel-ratio: 1.5) {
     /* CSS for high-density screens */
     #header {
-        background:url(high-density-image.png);
+        background:url(./imgs/mm.jpg);
     }
 }
 
 @media screen and (-webkit-device-pixel-ratio: 0.75) {
     /* CSS for low-density screens */
     #header {
-        background:url(low-density-image.png);
+        background:url(./imgs/mm.jpg);
     }
 }
 
@@ -120,8 +120,8 @@ html {
 }
 .os-phrases h2 {
 	font-family: 'Dosis', 'Lato', sans-serif;
-	font-size: 35px;
-	font-weight: 600;
+	font-size: 30x;
+	font-weight: 200;
 	width: 100%;
 	overflow: hidden;
 	text-transform: uppercase;
@@ -921,7 +921,7 @@ html {
 	}
 	100% {
 		opacity: 0.8;
-		text-shadow: 0 0 2px #fff;
+		text-shadow: 0 0 2px gold;
 	}
 }
 
