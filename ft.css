@@ -929,16 +929,6 @@ html {
 	font-weight: 800;
 }
 
-#footer {
-	color: #D4AF37;
-	font-size: 18px;
-	font-weight: 120;
-	display: block;
-	position:  bottom;
-  	height : 80px;
-	margin-top : 80px;
-  }
-
   /*=======================================
   Gallery STYLES
   =======================================*/
@@ -1072,7 +1062,7 @@ img:hover {
 .reservation h2 span {
 	width: 70%;
 	text-align: center;
-	margin: 0 auto;
+	margin: 2500 auto;
 	color: #13161B;
 	font-weight: 900;
 	font-size: 1.5em;
@@ -1128,6 +1118,30 @@ img:hover {
 	padding: 30px 39px;
 }
 
+.submit input[type="submit"] {
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
 .terms {
 	margin: 30px 1px 0 0 ;
 }
@@ -1154,26 +1168,13 @@ img:hover {
 	float: right;
 }
 
-.submit input[type="submit"] {
-	color: rgb(225,225,225);
-	cursor: pointer;
-	border: none;
-	font-weight: 900;
-	outline: none;
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	margin: 0px 3%;
-	padding: 7px 0px;
-	width: 25%;
+#footer {
+	color: #D4AF37;
 	font-size: 18px;
-	transition: border-color 0.3s color 0.3s background-color 0.3s;
-	border-radius: 7px;
-	background-color: #797a7b;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
-}
-
-.submit input[type="submit"]:hover {
-	color: #000;
-	background-color: #8D8E8F;
-	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+	font-weight: 120;
+	display: block;
+	position: relative;
+  	height : 80px;
+	margin-top : 80px;
+	margin: -103px 280px;
 }
