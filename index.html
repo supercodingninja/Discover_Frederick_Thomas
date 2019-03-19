@@ -48,7 +48,7 @@
                 <a href="#Home"><li>Theme</li></a>
                 <a href="#Bio"><li>Bio</li></a>
       
-          <!-- Make Gallery a container/div/section that scrolls through pictures in place -->
+          <!-- Make Gallery a div/section that rotates the pictures in place -->
                 <a href="#Gallery"><li>Gallery</li></a>
 
           <!-- Make this your achievments, testimonies, letters of recomendations, etc. -->
@@ -63,7 +63,7 @@
 
       <!--Begin Home-->
       <div id="Home">
-        <div class="container">
+        <div class="home-container">
           <div class="text-center">
             <span class="head-main"><u>Introducing</u></span><span>...</span>
           </div>
@@ -73,7 +73,7 @@
           
       <!--Begin Bio-->
       <div id="Bio">
-        <div class="container">
+        <div class="bio-container">
           <div class="text-center">
             <span class="head-main">The Believer's Progressing Journey</span>
           </div>
@@ -82,22 +82,38 @@
       <!--End Bio-->
 
       <!--Begin Gallery-->
-
+      <!-- 3D images gallery. inspired from David DeSandro's tutorial (http://24ways.org/2010/intro-to-css-3d-transforms) -->
+      <h1>Reflections of Me</h1>
+      <div id="Gallery">
+        <div class="Gallery">
+          <div id="deep-spin">
+            <figure><img src="./imgs/48403975_1943223845796173_4051209321923477504_n.jpg" alt=""></figure>
+            <figure><img src="./imgs/48411872_1945885518863339_467777584130686976_n(3).jpg" alt=""></figure>
+            <figure><img src="./imgs/48421796_1948447608607130_4639412476159459328_n.jpg" alt=""></figure>
+            <figure><img src="./imgs/49058139_1939324699519421_734963647029182464_n.jpg" alt=""></figure>
+            <figure><img src="./imgs/FAM.jpg" alt=""></figure>
+            <figure><img src="./imgs/Try.jpg" alt=""></figure>
+            <figure><img src="./imgs/TwT Orig.jpeg" alt=""></figure>
+            <figure><img src="./imgs/Unstoppable.png" alt=""></figure>
+            <figure><img src="./imgs/F.jpg" alt=""></figure>
+          </div>    
+        </div>
+      </div>
       <!--End Gallery-->
 
       <!--Begin Attestations-->
       <div id="Test">
-        <div class="container">
+        <div class="test-container">
           <div class="text-center">
             <span class="head-main">Attestations</span>
           </div>
         </div>          
       </div>
-      <!--End Attestations-->
+                                                                                                              <!--End At  testations-->
 
       <!--Begin RSVP-->
       <section id="Contact">
-        <div class="container">
+        <div class="rsvp-container">
           <div class="heading-padding">
             <h1 class="heading-padding">
               Contact Me!
@@ -106,7 +122,7 @@
               <h2><span>I am the change you've been looking for!</span>
               <br>Don't Delay!  Reserve your appointment with Rev. Frederick D. Thomas, Jr.</br>
               </h2>
-              <p class="rsvp-text">Please provide your contact information, below.</p>
+              <p                                                                                                                                                                                    class="rsvp-text">Please provide your contact information, below.</p>
               <div class="form-rsvp">
                 <form action="" method="post">
                   <input class="rsvp" type="text" value="" placeholder="First Name">
@@ -115,7 +131,10 @@
                   <input class="rsvp" type="text" value="" placeholder="Phone Number">
                 </form>
                 <div class="form-spacer">
-                    <label class="terms">Terms and Conditions</label> 
+                    <label class="terms">Terms and Conditions</label>
+                      <div class="terms-scroll">
+                        
+                      </div> 
                 </div>
                 <div class="submit">
                     <a href="SubInfo.html"><input type="submit" value="Submit"></a>

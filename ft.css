@@ -1,3 +1,6 @@
+/*===============================================================================================
+                Author: Rev. F. D. Thomas, Jr. aka The Super Coding Ninja &copy; 2018
+===============================================================================================*/
 @-ms-viewport{
   width: device-width;
 }
@@ -294,12 +297,6 @@ html {
     -webkit-animation-duration: 5.2s;
 	-moz-animation-duration: 5.2s;
 	animation-duration: 5.2s;
-	/* -webkit-animation-delay: 42;
-	-moz-animation-delay: 42;
-    animation-delay: 42; */
-    /* -webkit-animation-duration: 4s;
-	-moz-animation-duration: 4s;
-	animation-duration: 4s; */
 }
 
 .os-phrases h2:nth-child(7) > span > span > span {
@@ -937,10 +934,246 @@ html {
 	font-size: 18px;
 	font-weight: 120;
 	display: block;
-	position: absolute;
-  	right: 0px;
-  	bottom: 0;
-  	left: 0;
-	height : 80px;
+	position:  bottom;
+  	height : 80px;
 	margin-top : 80px;
   }
+
+  /*=======================================
+  Gallery STYLES
+  =======================================*/
+  /* 3D images gallery. inspired from David DeSandro's tutorial (http://24ways.org/2010/intro-to-css-3d-transforms) */
+  @import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+	box-sizing: border-box;
+}
+
+*:before,
+
+*:after {
+	box-sizing: border-box;
+}
+
+.Gallery h1{
+	display: table;
+	margin: 5% auto 0;
+	text-transform: uppercase;
+	font-family: 'Anaheim', sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	text-shadow: 0 1px white, 0 2px black;
+}
+
+.Gallery {
+	margin: 1500px auto;
+	width: 310px;
+	height: 440px;
+	position: relative;
+	perspective: 1000px;
+}	
+
+#deep-spin {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+
+#deep-spin:hover {
+	animation-play-state: paused;
+}
+
+#deep-spin figure {
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+
+#deep-spin figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#deep-spin figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#deep-spin figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#deep-spin figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#deep-spin figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#deep-spin figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#deep-spin figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#deep-spin figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#deep-spin figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img {
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .7s ease;
+}
+
+img:hover {
+	-webkit-filter: grayscale(0);
+  transform: scale(1.8,1.8);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+  /*=======================================
+  Contact STYLES
+  =======================================*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: rgba(100,65,0,.3);
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+#contact {
+     background-color: #f5f3f3;
+}
+
+.reservation {
+	width: 60%;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: rgba(100,65,0,.3);
+	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.reservation h2 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-weight: 500;
+	font-size: 1.3em;
+	letter-spacing: 0pt;
+	word-spacing: 0pt;
+}
+
+.reservation h2 span {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-weight: 900;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	letter-spacing: .4pt;
+	word-spacing: .3pt;
+}
+
+.reservation p {
+	color: #13161B;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.reservation form {
+	font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227,222,222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border-top: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px 1em;
+	border-radius: 7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+	box-shadow: 0 0 18px rgba(100,65,0,.8);
+}
+
+.form-spacer {
+	padding: 30px 39px;
+}
+
+.terms {
+	margin: 30px 1px 0 0 ;
+}
+
+.terms {
+	margin-top: 13%;
+	padding-left: 52px;
+	font-size: 14px;
+	line-height: 5px;
+	color: #000;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.terms:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+.terms {
+	position: relative;
+	display: inline;
+	float: right;
+}
+
+.submit input[type="submit"] {
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
