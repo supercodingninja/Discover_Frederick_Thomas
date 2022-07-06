@@ -2,7 +2,7 @@
                 Author: Rev. F. D. Thomas, Jr. aka The Super Coding Ninja &copy; 2018
 ===============================================================================================*/
 @-ms-viewport{
-  width: device-width;
+width: device-width;
 }
 
 html {
@@ -11,32 +11,32 @@ html {
 }
 
 #header {
-    background:url(./imgs/mm.jpg);
+	background:url(./imgs/mm.jpg);
 }
 
 @media screen and (-webkit-device-pixel-ratio: 1.5) {
-    /* CSS for high-density screens */
-    #header {
-        background:url(./imgs/mm.jpg);
-    }
+	/* CSS for high-density screens */
+	#header {
+		background:url(./imgs/mm.jpg);
+	}
 }
 
 @media screen and (-webkit-device-pixel-ratio: 0.75) {
-    /* CSS for low-density screens */
-    #header {
-        background:url(./imgs/mm.jpg);
-    }
+	/* CSS for low-density screens */
+	#header {
+		background:url(./imgs/mm.jpg);
+	}
 }
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+margin-right: -15px;
+margin-left: -15px;
 }
 
 .clearfix:after,
@@ -52,8 +52,8 @@ html {
 	width: 100%;
 	position: absolute;
 	/* This ensures that the images cannot 
-	   render outside of their container 
-	   without forcing any scrollbars*/
+		render outside of their container 
+		without forcing any scrollbars*/
 	overflow: hidden;
 	top: 0;
 	left: 0;
@@ -74,8 +74,8 @@ html {
 }
 
 .flex-container {
-    display: -webkit-flex;
-    display: flex;
+	display: -webkit-flex;
+	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
 	border-radius: 8px;
@@ -85,7 +85,7 @@ html {
 }
 
 #contact {
-     background-color: #f5f3f3;
+	background-color: #f5f3f3;
 }
 
 .menu {
@@ -293,8 +293,8 @@ html {
 .os-phrases h2:nth-child(6) > span > span > span {
 	-webkit-animation-delay: 42;
 	-moz-animation-delay: 42;
-    animation-delay: 42;
-    -webkit-animation-duration: 5.2s;
+	animation-delay: 42;
+	-webkit-animation-duration: 5.2s;
 	-moz-animation-duration: 5.2s;
 	animation-duration: 5.2s;
 }
@@ -302,8 +302,8 @@ html {
 .os-phrases h2:nth-child(7) > span > span > span {
 	-webkit-animation-delay: 48s;
 	-moz-animation-delay: 48s;
-    animation-delay: 48s;
-    -webkit-animation-duration: 5s;
+	animation-delay: 48s;
+	-webkit-animation-duration: 5s;
 	-moz-animation-duration: 5s;
 	animation-duration: 5s;
 }
@@ -534,14 +534,14 @@ html {
 .os-phrases h3:nth-child(6) > span > span > span {
 	-webkit-animation-delay: 42;
 	-moz-animation-delay: 42;
-    animation-delay: 42;
-    -webkit-animation-duration: 4s;
+	animation-delay: 42;
+	-webkit-animation-duration: 4s;
 	-moz-animation-duration: 4s;
 	animation-duration: 4s;
 	/* -webkit-animation-delay: 42;
 	-moz-animation-delay: 42;
-    animation-delay: 42; */
-    -webkit-animation-duration: 4s;
+	animation-delay: 42; */
+	-webkit-animation-duration: 4s;
 	-moz-animation-duration: 4s;
 	animation-duration: 4s;
 }
@@ -549,8 +549,8 @@ html {
 .os-phrases h3:nth-child(7) > span > span > span {
 	-webkit-animation-delay: 48s;
 	-moz-animation-delay: 48s;
-    animation-delay: 48s;
-    -webkit-animation-duration: 5s;
+	animation-delay: 48s;
+	-webkit-animation-duration: 5s;
 	-moz-animation-duration: 5s;
 	animation-duration: 5s;
 }
@@ -780,14 +780,14 @@ html {
 .os-phrases p:nth-child(6) > span > span > span {
 	-webkit-animation-delay: 42;
 	-moz-animation-delay: 42;
-    animation-delay: 42;
-    -webkit-animation-duration: 4s;
+	animation-delay: 42;
+	-webkit-animation-duration: 4s;
 	-moz-animation-duration: 4s;
 	animation-duration: 4s;
 	/* -webkit-animation-delay: 42;
 	-moz-animation-delay: 42;
-    animation-delay: 42; */
-    -webkit-animation-duration: 4s;
+	animation-delay: 42; */
+	-webkit-animation-duration: 4s;
 	-moz-animation-duration: 4s;
 	animation-duration: 4s;
 }
@@ -795,8 +795,8 @@ html {
 .os-phrases p:nth-child(7) > span > span > span {
 	-webkit-animation-delay: 48s;
 	-moz-animation-delay: 48s;
-    animation-delay: 48s;
-    -webkit-animation-duration: 5s;
+	animation-delay: 48s;
+	-webkit-animation-duration: 5s;
 	-moz-animation-duration: 5s;
 	animation-duration: 5s;
 }
@@ -929,17 +929,17 @@ html {
 	font-weight: 800;
 }
 
-  /*=======================================
-  Gallery STYLES
-  =======================================*/
-  /* 3D images gallery. inspired from David DeSandro's tutorial (http://24ways.org/2010/intro-to-css-3d-transforms) */
-  @import url(https://fonts.googleapis.com/css?family=Anaheim);
+/*=======================================
+Gallery STYLES
+=======================================*/
+/* 3D images gallery. inspired from David DeSandro's tutorial (http://24ways.org/2010/intro-to-css-3d-transforms) */
+@import url(https://fonts.googleapis.com/css?family=Anaheim);
 
 *{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
+margin: 0;
+padding: 0;
+outline: none;
+border: none;
 	box-sizing: border-box;
 }
 
@@ -1009,7 +1009,7 @@ img {
 
 img:hover {
 	-webkit-filter: grayscale(0);
-  transform: scale(1.8,1.8);
+transform: scale(1.8,1.8);
 }
 
 @keyframes rotation{
@@ -1021,12 +1021,12 @@ img:hover {
 	}
 }
 
-  /*=======================================
-  Contact STYLES
-  =======================================*/
+/*=======================================
+Contact STYLES
+=======================================*/
 .flex-container {
-    display: -webkit-flex;
-    display: flex;
+	display: -webkit-flex;
+	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
 	border-radius: 8px;
@@ -1036,7 +1036,7 @@ img:hover {
 }
 
 #contact {
-     background-color: #f5f3f3;
+	background-color: #f5f3f3;
 }
 
 .reservation {
@@ -1079,17 +1079,17 @@ img:hover {
 
 .reservation form {
 	font-size: 15px;
-    outline: none;
-    font-weight: 600;
-    color: #8D8E8F;
-    padding: 12px 12px;
-    width: 70%;
-    border: 1px solid #808080;
-    margin: 2% auto;
-    border-radius: 7px;
-    background: rgb(227,222,222);
-    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-    font-family: 'Raleway', sans-serif;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 12px 12px;
+	width: 70%;
+	border: 1px solid #808080;
+	margin: 2% auto;
+	border-radius: 7px;
+	background: rgb(227,222,222);
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+	font-family: 'Raleway', sans-serif;
 }
 
 .reservation input[type="text"] {
@@ -1174,7 +1174,7 @@ img:hover {
 	font-weight: 120;
 	display: block;
 	position: relative;
-  	height : 80px;
+	height : 80px;
 	margin-top : 80px;
 	margin: -103px 280px;
 }
